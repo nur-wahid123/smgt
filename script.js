@@ -1,18 +1,6 @@
-let  main = document.getElementsByClassName("main")
-console.log(main)
-let aa = [0,0,0,0];
-for (let index = 0; index < main.length; index++) {
-    const element = main[index];
-    element.style.background = "blue"
-    element.addEventListener("click",function (e) {
-        console.log(aa)
-        // aa[index]++
-        if (aa[index]==0) {
-            aa[index] = 1
-            element.style.background = "green"
-        } else {
-            aa[index] = 0
-            element.style.background = "blue"
-        }
+let  mai = document.getElementsByClassName("mai")
+console.log(mai)
+    mai[0].addEventListener("mousemove",function (e) {
+        document.getElementsByClassName('main')[0].style.left = (e.clientX-100)+"px"
+        document.getElementsByClassName('main')[0].style.top = (e.clientY-100)+"px"
     })
-}

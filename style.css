@@ -1,3 +1,9 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .wrapper{
     display: flex;
     justify-content: center;
@@ -5,9 +11,23 @@
     width: 100%;
     height: 100vh;
     gap: 10px;
+    background: #000;
 }
 .main{
-    background: red;
+    background: #ccc;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    height: 200px;
+    border-radius: 100%;
+    transition: 100ms;
+    filter: blur(50px);
+}
+.mai{
+    background: blue;
+    /* padding: 200px; */
+    z-index: 1;
     width: 300px;
     height: 300px;
+    transition: 100ms;
 }
